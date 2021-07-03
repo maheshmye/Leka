@@ -1,0 +1,193 @@
+.header{
+    background-color: aqua;
+    margin: 0px;
+    /* width: 1520px; */
+    width: 100%;
+    height: 80px;
+    position:fixed;
+    padding-left: 15px;
+    padding-right: 0%;
+
+    
+}
+
+/* chat ui */
+
+.container{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow: hidden;
+}
+.listOfUsers{
+    width: 30%;
+    height: 100%;
+    overflow-x: hidden;
+    border-right: 1px solid #ccc;
+}
+.chatArea{
+    width: 70%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+.chatHeader{
+    position: fixed;
+    width: 70%;
+    height: 80px;
+    background: #A2DBFA;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.chatControls{
+    display: flex;
+    position: fixed;
+    width: 70%;
+    height: 50px;
+    bottom: 0;
+    margin-top: 5px;
+}
+.chatControls textarea{
+    width: 90%;
+}
+.chatControls button{
+    width: 10%;
+}
+
+.displayName{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.displayName.active{
+    background: #ccc;
+}
+
+.displayName .displayPic{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.displayName .displayPic img{
+    width: 30px;
+    height: 30px;
+    /* object-fit: cover; */
+}
+
+.usernamepic{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: pink;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+    font-family: cursive;
+}
+
+.messageStyle{
+    background: skyblue;
+    /* display: inline-block; */
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 3px;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.messageSections{
+    /* height: calc(100% - 90px); */
+    height:530px;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    top: 80px;
+    padding-top: 10px;
+}
+
+.userOnline{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: greenyellow;
+}
+.userOffline{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(255,0,0);
+}
+
+Link:hover{
+    text-decoration: none;
+    
+}
+
+.registrationui{
+    background-color: #B0EFEB;
+    width: 500px;
+    height:100%;
+    margin:auto auto;
+    position: relative;
+    top:250px;
+    text-align: center;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+Input{
+    width:50%;
+    height:35px;
+    border-radius: 20px;
+    background-color: #E4EFE7;
+    margin:5px;
+   /* padding: 5px; */
+    padding-left: 20px;
+    border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        font-family:cursive;
+        font-size: medium;
+}
+Input[type=submit]{
+    width:30%;
+    height:50px;
+}
+*:focus {
+    outline: none;
+}
+
+textarea{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 5px;
+    resize: none;
+    padding-left: 13px;
+    padding-top: 13px;
+    /* size: 3rem; */
+    background-color: #EDEDED;
+    border:1 px solid black;
+    border-right: none;
+    font-family: cursive;   
+}
+button{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom:5px;
+    background-color: #EDEDED;
+    border-left: none;
+    border:1px solid black;
+    border-right: none;
+}
